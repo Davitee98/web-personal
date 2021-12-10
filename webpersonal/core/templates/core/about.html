@@ -1,0 +1,26 @@
+{% extends 'core/base.html' %}
+
+{% block title %} Acerca de la pagina{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/imag/abou.jpg' %}{% endblock %}
+
+{% block headers %}
+    <h1>Acerca de</h1>
+    <span class="subheading">Biografia</span>
+{% endblock %}
+
+{% block content %} 
+<div class="container">
+    <div class="row">   
+      <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="imag-fluid avatar" src="{% static 'core/imag/avata.jpg' %}" alt="">
+      </div>
+      <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">David Enriquez</h2>   
+        <p>Estudiante de la Universidad Tecnica de Manabi.</p>
+        <p>Portoviejo-Ecuador</p>
+      </div>
+    </div>  
+  </div>
+</div>
+{% endblock %}
